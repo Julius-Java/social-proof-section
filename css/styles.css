@@ -5,8 +5,284 @@ body {
     background-position: top left, bottom right;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
 }
 
-.container {
-    padding-top: 3rem;
+p {
+    font-size: 15px;
 }
+
+
+#main {
+    padding: 5% 14%;
+}
+
+/* Review Section */
+
+.review-intro-heading {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 1;
+    margin-bottom: 1.6rem;
+}
+
+.review-intro-p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 700;
+}
+
+.review {
+    padding-top: 4rem;
+}
+
+.review-point {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    width: 80%;
+    border-radius: 13px;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.review-star {
+    margin-right: 5rem;
+}
+
+.review-point p {
+    margin-bottom: 0;
+}
+
+.review-two {
+    margin-left: 2rem;
+}
+
+.review-three {
+    margin-left: 4rem;
+}
+/* -------------- */
+
+
+
+
+/* Testimonial Section */
+#testimonial-section {
+    margin-top: 5rem;
+}
+
+.customer-testimonial {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 1.8rem;
+}
+
+.customer-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.customer-profile img {
+    border-radius: 4rem;
+    width: 50px;
+    height: 50px;
+    margin-right: 3rem;
+}
+
+.customer-name, .customer-status {
+    margin-bottom: 0;
+}
+
+.customer-comment {
+    margin-top: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.customer-name {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.customer-status {
+    color: hsl(333, 80%, 67%);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#testimonial-two {
+    margin-top: 2rem;
+}
+
+#testimonial-three {
+    margin-top: 4rem;
+}
+/* ------------------- */
+
+
+/* Media Queries */
+@media (max-width: 1550px) {
+    .review-point {
+        padding: 0.8rem 1rem;
+        width: 90%;
+    }
+}
+
+@media (width: 1446px) {
+    #testimonial-two {
+        margin-top: 2.5rem;
+    }
+
+    #testimonial-three {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (max-width: 1268px) {
+    #main {
+        padding: 5% 12%;
+    }
+}
+
+@media (max-width: 1215px) {
+    .review-point {
+        padding: 0.8rem 0.7rem;
+        width: 95%;
+    }
+
+    #main {
+        padding: 5% 9%;
+    }
+
+    .customer-profile img {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    #main {
+        padding: 5% 5%;
+    }
+
+    .review-two {
+        margin-left: 1.4rem;
+    }
+
+    .review-three {
+        margin-left: 2.8rem;
+    }
+}
+
+@media (max-width: 956px) {
+    .customer-testimonial {
+        padding: 1.4rem;
+    }
+
+    .review-intro-heading {
+        font-size: 3rem;
+    }
+
+    .review-point {
+        width: 100%;
+    }
+
+    .review {
+        padding-left: 0.2rem;
+    }
+
+    .customer-comment {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 914px) {
+    .customer-testimonial {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 892px) {
+    .review-point {
+        width: 90%;
+    }
+
+    .review-star {
+        margin-right: 2rem;
+    }
+
+    .customer-testimonial {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .customer-profile img {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 835px) {
+    .review-point {
+        width: 98%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    }
+
+    #main {
+        padding: 7% 10%;
+    }
+
+    .review-intro-heading {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .review-intro-p {
+        text-align: center;
+    }
+
+    .review-point {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .review-two, .review-three {
+        margin-left: 0;
+    }
+
+    .review {
+        padding: 1rem 0;
+    }
+
+    #testimonial-two, #testimonial-three {
+        margin-top: 1rem;
+    }
+
+    .customer-testimonial {
+        padding: 1.5rem;
+    }
+
+    #testimonial-section {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 459px) {
+    .review-intro {
+        padding: 0;
+    }
+
+    .review-intro-p {
+        font-size: 0.8rem;
+    }
+}
+/* ------------- */
